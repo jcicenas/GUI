@@ -8,7 +8,7 @@ public class GUI {
     //class attributes
     private JLabel label1;
     private JLabel label2;
-    private int val = 0;
+    private int vale = 0;
     private int changes = 0;
 
     //constructor
@@ -27,7 +27,7 @@ public class GUI {
         frame.add(panel);
 
         //Labels!
-        label1 = new JLabel("Value: " + val);
+        label1 = new JLabel("Value: " + vale);
         label1.setHorizontalAlignment(JLabel.CENTER);
         panel.add(label1);
 
@@ -69,13 +69,13 @@ public class GUI {
     public void b1Press() {
         val--;
         changes++;
-        label1.setText("Value: " + val);
+        label1.setText("Value: " + vale);
         label2.setText("Number of changes: " + changes);
     }
     public void b2Press() {
         val++;
         changes++;
-        label1.setText("Value: " + val);
+        label1.setText("Value: " + vale);
         label2.setText("Number of changes: " + changes);
     }
 }
